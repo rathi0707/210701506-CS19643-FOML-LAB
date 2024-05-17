@@ -16,7 +16,7 @@ ypoints = (df["population"] > df["population"].mean()).astype(int).values  # Bin
 # Split the data into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(xpoints, ypoints, test_size=0.1, random_state=42)
 
-# Create and train the Naive Bayes model
+# Create and train the Naive Bayes modelss
 naive_bayes = GaussianNB()
 naive_bayes.fit(x_train, y_train)
 
